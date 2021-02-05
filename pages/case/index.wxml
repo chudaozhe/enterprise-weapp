@@ -1,0 +1,41 @@
+<!--pages/case.wxml-->
+<view class="container">
+  <!--搜索框  -->
+  <van-search
+      id="search"
+      value="{{ keyword }}"
+      shape="round"
+      background="orange"
+      placeholder="请输入关键词"
+      bind:change="onChange"
+      bind:search="onSearch"
+      style="width:100%"/>
+
+  <view class='main'>
+    <!--左边-->
+    <view class='aside' style="height:{{scrollHeight}}px">
+      <view class="{{category_id === item.id? 'active':''}}" wx:for="{{categorys}}" wx:key="id" data-id="{{item.id}}" bindtap="menuClick">
+        {{item.name}}
+        <text class='line' hidden="{{category_id === item.id? false:true}}" data-id="{{item.id}}"></text>
+      </view>
+    </view>
+
+    <!--右边-->
+    <view class='content'>
+      <view class='app'>
+        <scroll-view class="scroll-view" style="height:{{scrollHeight}}px" scroll-y="{{true}}" refresher-enabled="{{true}}" bindrefresherrefresh="onRefresh" refresher-triggered="{{loading}}" bindscrolltolower="onReachBottom">
+          <navigator url="/pages/case/detail?id={{item.id}}" class='list-item' wx:for="{{list}}" wx:key="id">
+            <image wx:if="{{item.image!==''}}" src="{{host}}{{item.image}}" />
+            <image wx:else src="/images/nopic.jpg" />
+            <view class='text'>
+              <text class='title'>{{item.title}}</text>
+              <text class='description'>{{item.description}}</text>
+            </view>
+          </navigator>
+          <van-empty wx:if="{{list.length==0}}" description="空空如也" />
+        </scroll-view>
+      </view>
+    </view>
+
+  </view>
+</view>

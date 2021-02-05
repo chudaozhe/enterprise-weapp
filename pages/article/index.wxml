@@ -1,0 +1,20 @@
+<!--pages/article/index.wxml-->
+<van-tabs swipeable ellipsis="{{false}}" active="{{ active }}" bind:change="onChange">
+
+    <van-tab title="{{item.name}}" wx:for="{{categorys}}" wx:key="id">
+        <scroll-view class="scroll-view" style="height:{{scrollHeight}}px" scroll-y="{{true}}" refresher-enabled="{{true}}" bindrefresherrefresh="onRefresh" refresher-triggered="{{loading}}" bindscrolltolower="onReachBottom">
+                <navigator url="/pages/article/detail?id={{item.id}}" class='list-item' wx:for="{{list}}" wx:key="id" data-proId="{{item.id}}">
+                <image wx:if="{{item.image!==''}}" src="{{host}}{{item.image}}" />
+                <image wx:else src="/images/nopic.jpg" />
+                <view class='text'>
+                    <text class='title'>{{item.title}}</text>
+                    <view class="description">
+                        <text class='date'>{{item.create_time}}</text>
+                        <text class='views'>{{item.views}}人看过</text>
+                    </view>
+                </view>
+                </navigator>
+                <van-empty wx:if="{{list.length==0}}" description="空空如也" />
+        </scroll-view>
+    </van-tab>
+</van-tabs>

@@ -1,0 +1,34 @@
+<!--pages/case/detail.wxml-->
+<import src="/wxParse/wxParse.wxml"/>
+<view class='container'>
+  <!-- 轮播  -->
+  <view class='swiper'>
+    <swiper indicator-dots="true" indicator-color="gray" indicator-active-color="orange" autoplay='true' interval='2500' circular='true'>
+      <swiper-item wx:for="{{images}}" wx:key="*this" >
+        <image src="{{item}}" />
+      </swiper-item>
+    </swiper> 
+  </view>
+  <view class='header'>
+    <view class='title'>{{field.title}}</view>
+    <view class='desc'>
+      {{field.description}}
+    </view>
+  </view>
+  <view class='case-title'>案例详情</view>
+  <view class='case-detail'>
+    <!-- 这里data中content为bindName -->
+    <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+  </view>
+  <!-- 咨询  -->
+  <view class='contact'>
+    <view class='phone' bindtap="handleCall" >
+      <image src='/images/phone-contact.png' />
+      <text>电话咨询</text>  
+    </view>
+    <view class='wx' bindtap="handleWx" >
+      <image src='/images/wechat-contact.png' />
+      <text>微信咨询</text>
+    </view>
+  </view>
+</view>

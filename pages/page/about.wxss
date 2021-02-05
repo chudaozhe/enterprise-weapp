@@ -1,0 +1,12 @@
+/* pages/page/about.wxss */
+.container{
+  padding: 0 20rpx;
+}
+.wxParse-p{
+  width: 100%;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  color: gray;
+  text-align: justify;
+  text-align-last: left;
+}

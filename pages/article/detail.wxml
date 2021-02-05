@@ -1,0 +1,15 @@
+<!--pages/article/detail.wxml-->
+<import src="/wxParse/wxParse.wxml"/>
+<view class='container'>
+  <!-- 标题 介绍  -->
+  <view class='header'>
+    <view class='title'>{{field.title}}</view>
+    <view class="memo">
+      <text>发布时间：{{field.create_time}}</text>
+      <text style="margin-left:20rpx">{{field.views}}人看过</text>
+    </view>
+  </view>
+  <!--图文详情  -->
+  <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+
+</view>
