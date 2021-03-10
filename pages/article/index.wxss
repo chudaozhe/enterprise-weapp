@@ -40,6 +40,9 @@
   float: left;
   color: gray;
 
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
   /* 多行，超过显示省略号 */
   /* display: -webkit-box;
   overflow: hidden;

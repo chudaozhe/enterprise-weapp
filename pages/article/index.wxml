@@ -1,5 +1,5 @@
 <!--pages/article/index.wxml-->
-<van-tabs swipeable ellipsis="{{false}}" active="{{ active }}" bind:change="onChange">
+<van-tabs swipeable color="orange" ellipsis="{{false}}" active="{{ active }}" bind:change="onChange">
 
     <van-tab title="{{item.name}}" wx:for="{{categorys}}" wx:key="id">
         <scroll-view class="scroll-view" style="height:{{scrollHeight}}px" scroll-y="{{true}}" refresher-enabled="{{true}}" bindrefresherrefresh="onRefresh" refresher-triggered="{{loading}}" bindscrolltolower="onReachBottom">

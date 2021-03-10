@@ -1,6 +1,8 @@
 <!--pages/page/about.wxml-->
 <import src="/wxParse/wxParse.wxml"/>
-<view class='container'>
+<view class="container">
+<scroll-view scroll-y="true" scroll-top="50" >
   <image style="width:750rpx; height:375rpx" src="{{host}}{{field.image}}"></image>
   <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+</scroll-view>
 </view>

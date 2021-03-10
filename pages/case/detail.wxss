@@ -20,7 +20,6 @@
 /* header  */
 .header {
   width: 750rpx;
-  height: 156rpx;
   background-color: #fff;
 }
 .header .title {
@@ -29,8 +28,8 @@
   font-size: 34rpx;
 }
 .header .desc {
-  margin-top: 20rpx;
-  padding: 0 20rpx;
+  margin-top: 10rpx;
+  padding: 10rpx 20rpx;
   font-size: 26rpx;
   color: #999;
 }
@@ -64,12 +63,12 @@
 }
 .contact .phone {
   width: 375rpx;
-  color: #E94709;
+  color: orange;
   background-color: #fff;
 }
 .contact .wx {
   flex: 1;
-  background-color: #E94709;
+  background-color: orange;
   color: #fff;
 }
 .contact view {

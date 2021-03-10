@@ -47,7 +47,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.15.0",
   "appid": "",
-  "projectname": "weapp-enterprise",
+  "projectname": "enterprise-weapp",
   "debugOptions": {
     "hidedInDevtools": []
   },

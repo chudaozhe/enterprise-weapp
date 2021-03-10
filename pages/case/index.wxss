@@ -42,7 +42,7 @@
   position: absolute;
   top: 26rpx;
   left: 0;
-  background-color: #E53935;
+  background-color: orange;
 }
 
 /* 右侧  */
@@ -82,4 +82,8 @@
   margin-top: 18rpx;
   float: left;
   color: gray;
+  
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
 }

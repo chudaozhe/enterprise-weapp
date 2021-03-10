@@ -11,9 +11,9 @@
 
 # 截图
 
-![architecture](screenshots/home.jpg)
-![architecture](screenshots/cases.jpg)
-![architecture](screenshots/news.jpg)
+![home.jpg](screenshots/home.jpg)
+![cases.jpg](screenshots/cases.jpg)
+![news.jpg](screenshots/news.jpg)
 
 # 快速开始
 
@@ -24,9 +24,11 @@ npm install
 
 2.不校验域名, 使用npm模块
 
-![architecture](screenshots/WX20210204-170252@2x.jpg)
-
+![WX20210204-170252@2x.jpg](screenshots/WX20210204-170252@2x.jpg)
 
 3.工具->构建npm
 
-![architecture](screenshots/WX20210204-170106@2x.jpg)
+![WX20210204-170106@2x.jpg](screenshots/WX20210204-170106@2x.jpg)
+
+# 案例展示
+![code1.png](screenshots/code1.png)

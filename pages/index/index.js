@@ -50,6 +50,18 @@ Page({
     this.setData({ page: this.data.page + 1 });
     this.getData(this.data.page);
   },
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function (res) {
+    let current = (new Date()).toLocaleDateString();
+    let date =current.replace(/\//g,'-');
+    return {
+      title: '标题',
+      imageUrl:'/images/nopic.jpg?'+date,
+      path: '/pages/index/index',
+    }
+  },
   getData: function (page) {
     let _this = this;
     app.request('/user/0/category/0/cases', {page: page, max: 10}, function (res) {
