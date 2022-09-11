@@ -34,13 +34,13 @@ App({
     })
   },
   globalData: {
-    host: 'https://ent.cuiwei.net/v1/', //http://localhost/v1/
+    host: 'https://ent.cuiwei.net', //http://localhost
     userInfo: null,
     mobile: '00000000000',
     wx: '00000000000',
   },
   request: function (uri, data, callback, method = 'get', xtoken = false) {
-    let host = this.globalData.host;
+    let host = this.globalData.host+"/v1";
     let token = '';
     let header = {};
     wx.getStorage({

@@ -17,7 +17,7 @@ https://ent.cuiwei.net/console/
 vi app.js
 ...
   globalData: {
-    host: 'https://ent.cuiwei.net/v1/', //http://localhost/v1/
+    host: 'https://ent.cuiwei.net', //http://localhost
   },
 ...
 ```
