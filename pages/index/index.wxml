@@ -32,5 +32,5 @@
     </van-grid-item>
     </van-grid>
   </van-panel>
-  <van-notice-bar scrollable="{{ false }}" style="width: 100%; margin-bottom:150rpx" color="#1989fa" background="#ecf9ff" mode="closeable" text="元熙科技(yuanxi.ltd)提供技术支持" />
+<!--  <van-notice-bar scrollable="{{ false }}" style="width: 100%; margin-bottom:150rpx" color="#1989fa" background="#ecf9ff" mode="closeable" text="元熙网络提供技术支持" />-->
 </view>

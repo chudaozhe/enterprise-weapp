@@ -34,7 +34,7 @@ App({
     })
   },
   globalData: {
-    host: 'https://test.yuanxi.ltd/enterprise',
+    host: 'https://ent.cuiwei.net/v1/', //http://localhost/v1/
     userInfo: null,
     mobile: '00000000000',
     wx: '00000000000',
