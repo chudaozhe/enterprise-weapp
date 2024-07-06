@@ -1,0 +1,92 @@
+{
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/cases/cases",
+			"style": {
+				"navigationBarTitleText": "成功案例"
+			}
+		},
+		{
+			"path": "pages/article/article",
+			"style": {
+				"navigationBarTitleText": "资讯中心"
+			}
+		},
+		{
+			"path": "pages/page/page",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/page/about",
+			"style": {
+				"navigationBarTitleText": "关于我们"
+			}
+		},
+		{
+			"path": "pages/cases/detail",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		},
+		{
+			"path": "pages/article/detail",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		},
+		{
+			"path": "pages/index/search",
+			"style": {
+				"navigationBarTitleText": "案例",
+				"enablePullDownRefresh": true
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#EE9F38",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home2.png"
+			},
+			{
+				"pagePath": "pages/cases/cases",
+				"text": "成功案例",
+				"iconPath": "static/tabbar/product.png",
+				"selectedIconPath": "static/tabbar/product2.png"
+			},
+			{
+				"pagePath": "pages/article/article",
+				"text": "资讯中心",
+				"iconPath": "static/tabbar/news.png",
+				"selectedIconPath": "static/tabbar/news2.png"
+			},
+			{
+				"pagePath": "pages/page/about",
+				"text": "关于我们",
+				"iconPath": "static/tabbar/aboutus.png",
+				"selectedIconPath": "static/tabbar/aboutus2.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	}
+}

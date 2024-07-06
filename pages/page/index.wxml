@@ -1,6 +1,0 @@
-<!--pages/page/index.wxml-->
-<import src="/wxParse/wxParse.wxml"/>
-<view class="container">
-  <image wx:if="{{field.image!==''}}" style="width:750rpx; height:375rpx" src="{{host}}{{field.image}}"></image>
-  <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
-</view>
