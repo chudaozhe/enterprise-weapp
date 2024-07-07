@@ -3,7 +3,9 @@
 - [uni-app](https://uniapp.dcloud.net.cn/)
 - [Vue3](https://github.com/vuejs/core)
 - [uni-ui](https://ext.dcloud.net.cn/plugin?id=55)
+
 - [pinia-plugin-unistorage](https://ext.dcloud.net.cn/plugin?id=8081)
+- [uni-ajax](https://ext.dcloud.net.cn/plugin?id=2351)
 - [Prettier](https://ext.dcloud.net.cn/plugin?id=2025)
 
 如果需要`服务端`或`管理员端`，请移步：https://github.com/chudaozhe/gin-vue-weapp
